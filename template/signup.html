@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+​
+
+    <link rel="stylesheet" href="./css/signup.css">
+
+    <script src="./js/signup.js"></script>
+
+    <title>BOLT | An online marketplace for your automobiles</title>
+
+    </head>
+
+    <body onload="myFunctions()">
+
+        <div class="header"> 
+
+            <nav>
+
+                <ul class="navigation">
+
+                    <li><a href="./index.html">HOME</a><li>
+
+                    <li><a href="./inventory.html">INVENTORY</a><li>
+
+                    <li><a href="./about.html">ABOUT US</a>
+
+                    <li><a href="./signup.html">REGISTER</a>
+
+                    <li><a href="./signup.html">LOG IN</a>
+
+            </nav>
+
+        </div>
+
+        <div class="form-container">
+
+            <form id="sign-up">
+
+                <div class="form-title"><span>Sign Up</span></div>
+
+                <div class="section">
+
+                        <div class="form-inputs">
+
+                                <label>Firstname</label>
+
+                                <input type="text" placeholder="First Name" id="firstname" value=""/>
+
+                            </div>
+
+                            <div class="form-inputs">
+
+                                <label>Lastname</label>
+
+                                <input type="text" placeholder="Last Name" id="lastname" value=""/>
+
+                            </div>
+
+                </div>
+
+                <div class="section">
+
+                    <div class="form-inputs">
+
+                    <label>Email </label>
+
+                    <input type="email" placeholder="Email " id="emailaddress" value=""/>
+
+                </div>
+
+                <div class="form-inputs">
+
+                    <label>Phone number </label>
+
+                        <input type="text" placeholder="Phone Number " id="phonenumber" value=""/>
+
+                    </div>
+
+                </div>
+
+                <div class="section">
+
+                    <div class="form-inputs">
+
+                        <label>Password</label>
+
+                        <input type="text" placeholder="Password" id="password" value=""/>
+
+                    </div>
+
+                    <div class="form-inputs">
+
+                        <label>Confirm Password </label>
+
+                        <input type="password" placeholder="Password " id="confirm password" value=""/>
+                </div>
+
+                </div>
+
+                <div class="button">
+
+                    <input type="submit" class="submit" value="REGISTER">
+
+                </div>
+
+                <div class="info"><p id="signin-info">Are you a member already? Sign In</p></div>
+
+            </form>
+
+            <form id="sign-in" style="display: none" >
+
+                <div class="form-title"><span>Sign In</span></div> 
+
+                <div class="form-inputs">
+
+                <label>Email </label>
+
+                <input type="email" placeholder="Email " id="emailaddress" value=""/>
+
+                </div>  
+
+                <div class="form-inputs">
+
+                    <label>Password</label>
+
+                    <input type="text" placeholder="Password" id="password" value=""/>
+
+                </div>
+
+                <div class="button">
+
+                    <input type="submit" class="submit" value="LOG IN">
+                </div>
+                <div class="info"><p id="signup-info">Are you a new user? Register here!</p></div>
+
+            </form>
+
+        </div>
+
+    </body>
+
+</html>
+
