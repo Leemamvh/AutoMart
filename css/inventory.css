@@ -76,23 +76,36 @@
         font-weight: bold;
     
     }
-   
-  
+  /* Create four equal columns that sits next to each other */
 .column {
     float: left;
-    width: 25%;
-    padding: 5px;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
   }
 
 img {
-    width:70%;
+    width:100%;
+    height: auto;
+    margin-top: 8px;
+    
 }
 h2 {
     font-size: 30px;
+   
 }
-  /* Clearfix (clear floats) */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+  
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+     
+}
+/* Responive layout - makes a two column-layout instead of four */
+@media screen and (max-width: 800px)
+{
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
 }
