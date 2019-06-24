@@ -1,0 +1,114 @@
+gitbody {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #ffffff;
+    background-color: #b34952;
+    padding-top: 0px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.navigation {
+    list-style: none;  
+    float: right;
+
+}
+.navigation li {
+    display: inline-block;
+    margin-left: 30px;
+    clear: auto;
+    color: goldenrod;
+}
+
+.navigation li:first-child {
+    margin: 0;
+    } 
+    
+ .navigation li a:link {
+   text-decoration: none;
+   text-transform: uppercase;
+   color:rgb(44, 40, 44); 
+    }
+    
+.navigation li a:hover {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase; 
+    padding: 10px 20px;
+    background-color: #837f80;
+}
+.about-section {
+    width: 100%;
+    padding:40px 0;
+    background: #b34952;
+}
+.page-content {
+   padding: 0 20px;
+   max-width: 1000px;
+   overflow: hidden;
+}
+.page-content h1 {
+    border-bottom: 3px solid #2badc1;
+    color: #888;
+    font-family: open sans,sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+ p {
+    color: #f1bebe;
+    font-family: Calibri;
+    font-size: 30px;
+
+}
+.about {
+    padding-right:30px;
+}
+.about a {
+    display:inline-block;
+    color: #393939;
+    text-decoration: none;
+    border: 2px solid #393939;
+    border-radius: 24px;
+    padding: 8px 40px ;
+    transition: 0.4s linear;
+}
+.about a:hover{
+color: aqua;
+background: #393939;
+}
+.about p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 700px) {
+.about-section {
+    flex: 100%;
+    margin: 10px 0;
+}
+.about {
+    padding: 0;
+    text-align: center;
+}
+}
+
+ h2 {
+    font-size: 30px;
+    border-bottom: 3px solid #9b836d09;
+    color: rgb(231, 182, 182);
+    font-family: open sans,sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
