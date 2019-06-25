@@ -1,10 +1,10 @@
 body {
-    font-family: helvetica neue,Helvetica,Arial,sans-serif;
+    font-family: Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #333;
-    background-color: #b34952;
-    padding-top: 0px;
+    color: black;
+    padding: 0;
+    margin: 0;
 }
 nav {
     display: flex;
@@ -20,17 +20,17 @@ nav {
     display: inline-block;
     margin-left: 30px;
     clear: auto;
-    color: white;
+    color: goldenrod;
 }
 
 .navigation li:first-child {
     margin: 0;
-    }
+    } 
     
  .navigation li a:link {
    text-decoration: none;
    text-transform: uppercase;
-   color:whitesmoke; 
+   color:rgb(44, 40, 44); 
     }
     
 .navigation li a:hover {
@@ -39,120 +39,59 @@ nav {
     text-decoration: none;
     text-transform: uppercase; 
     padding: 10px 20px;
-    background-color: #b34952;
+    background-color: #837f80;
+}
+header {
+    height: 40vh;
+    background-image:linear-gradient(
+    to right,
+    rgba(156, 87, 87, 0.246),
+     rgba(24, 21, 21, 0.246)),
+    url("../images/autocar.jpg");
+    background-size: cover;
+    background-position:top;
+    position: relative;
+}
+.about-section {
+    width: 100%;
+    padding:40px 0;
 }
 .page-content {
-    margin-top: 40px;
-    padding-bottom: 50px;
-}
-.page-content h1 {
-    border-bottom: 3px solid #2badc1;
-    color: #888;
-    font-family: open sans,sans-serif;
-    font-size: 40px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+   padding: 0 20px;
+   max-width: 1000px;
+   overflow: hidden;
+} 
+ h1 {
+    font-size: 50px;
+    font-family: monospace;
     text-transform: uppercase;
+    text-align: center;
+    color:white;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 0 15px;
 }
-.page-content p {
-    color: #393939;
+ p {
+    color: #2f0909;
     font-family: Calibri;
-    font-size: 17px;
+    font-size: 20px;
+ }
+@media only screen and (max-width: 700px) {
+.about-section {
+    flex: 100%;
+    margin: 10px 0;
 }
-h1 {
-    margin-top: 40px;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    margin: .67em 0;
-    display: block;
-}
-.no-padding {
-    padding:0 !important;
-}
-.white-bg {
-    background: #fff;
-}
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.clearfix ::before {
-    display: table;
-    content: " ";
-}
-.clearfix ::after {
-    display: table;
-    content: " ";
-    clear: both;
-}
-.page-contentt {
-    background: rgba(237,236,232,.95) none repeat scroll 0 0;
-    top: 123px;
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-.column {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-div {
-    display: block;
-}
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid #eee;
-    height: 0;
-    display: block;
-    unicode-bidi: isolate;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-    overflow: hidden;
-}
-.page-contentt p {
-    font-size: 17px;
-    color: #393939;
-}
-@media only screen and (max-width: 767px) {
-.page-content h1 {
-    font-size: 22px;
+.page-content {
+    padding: 0;
+    text-align: center;
 }
 }
-h2 {
-    font-size: 30px;
-     font-family: inherit;
-    font-weight: 500;
-    line-height: 1.1;
-    color: inherit;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-.coll {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+
+ h2 {
+    font-size: 26px;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2f0909;
 }
