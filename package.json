@@ -1,0 +1,33 @@
+{
+  "name": "automart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node -- server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leemamvh/AutoMart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leemamvh/AutoMart/issues"
+  },
+  "homepage": "https://github.com/Leemamvh/AutoMart#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/node": "^7.0.0",
+    "nodemon": "^1.18.4"
+  }
+}
