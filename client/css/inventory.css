@@ -1,111 +1,93 @@
 * {
     margin: 0;
     padding: 0; 
-    box-sizing: border-box;
+
 }
  body {
         font-family: "Lato";
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.7; 
         background-color:#997c7c;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1240px;
+        overflow: hidden;
         
     }
-    nav {
-        display: flex;
-        justify-content: center;
-        padding: 10px;
+   h1 {
+       font-size: 28px;
+       font-weight: 300;
+       flex: 1;
+   }
+   h5{
+       color:#666;
+       font-size: 14px;
+   }
+   /*Product layout  */
+     .product-filter {
+     display: flex;
+     padding: 30px 0;
     }
-    
-    
-    
-    .navigation {
-        list-style: none;  
-        float: right;
-    
-    }
-    .navigation li {
-        display: inline-block;
-        margin-left: 30px;
-        clear: auto;
-        color: white;
-    }
-    
-    .navigation li:first-child {
-        margin: 0;
-        }
-        
-     .navigation li a:link {
-       text-decoration: none;
-       text-transform: uppercase;
-       color:whitesmoke; 
-        }
-        
-    .navigation li a:hover {
-        display: inline-block;
-        text-align: center;
-        text-decoration: none;
-        text-transform: uppercase; 
-        padding: 10px 20px;
-        background-color: #b34952;
-    }
- .header-title {
-        background: #012a46;
-        color: #fff;
-        line-height: 1;
-        padding: 15px 0;
-    }
-    .header-title h2 {
-        font-size: 25px;
-        font-weight: 400;
-        margin: 0;
-    }
-    .container {
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    h2 {
-        display: block;
-        font-size: 1.5em;
-        margin-block-start: 0.83em;
-        margin-block-end: 0.83em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        font-weight: bold;
-    
-    }
-  /* Create four equal columns that sits next to each other */
-.column {
-    float: left;
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
 
-img {
-    width:100%;
-    height: auto;
-    margin-top: 8px;
-    
-}
-h2 {
-    font-size: 30px;
+    .sort {
+        display: flex;
+        align-self: flex-end;
+    }
+    .collection-sort {
+        display: flex;
+        flex-direction: column;
+    }
+    .collection-sort:first-child {
+        padding-right: 20px;
+    }
+    label{
+        color: #666;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 2em;
+        text-transform: uppercase;
+    }
    
-}
-  
-.row {
+.products {
     display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-     
+    flex-wrap:wrap;
 }
-/* Responive layout - makes a two column-layout instead of four */
-@media screen and (max-width: 800px)
-{
-    .column {
-        flex: 50%;
-        max-width: 50%;
+.product-card{
+flex: 1 16%;
+padding : 2%;
+background-color: #fff;
+box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+}
+
+.product-image img {
+width: 100%;
+}
+.product-info{
+text-align: center;
+margin-top: auto;
+padding-top: 20px;
+}
+
+@media (max-width:920px) {
+    .product-card {
+        flex: 1 21%;
+    }
+    .product .product-card:first-child,
+    .product .product-card:nth-child(2) {
+        flex: 1 46%;
+    }
+}
+@media (max-width:600px) {
+    .product-card {
+    flex: 1 46%;
+    }
+}
+@media  (max-width:480px) {
+    h1{
+        margin-bottom: 20px;
+    }
+    .product-filter {
+        flex-direction: column;
+    }
+    .sort {
+        align-self: flex-start;
     }
 }

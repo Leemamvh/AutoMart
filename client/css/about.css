@@ -1,19 +1,17 @@
- ft-about-us-page-#166546865
-gitbody {
-
 body {
- master
     font-family: Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #ffffff;
-    background-color: #b34952;
-    padding-top: 0px;
+    color: black;
+    padding: 0;
+    margin: 0;
 }
 nav {
     display: flex;
     justify-content: center;
     padding: 10px;
+    background-color:  #b34952;
+
 }
 .navigation {
     list-style: none;  
@@ -24,17 +22,17 @@ nav {
     display: inline-block;
     margin-left: 30px;
     clear: auto;
-    color: goldenrod;
+    color: white;
 }
 
 .navigation li:first-child {
     margin: 0;
-    } 
+    }
     
  .navigation li a:link {
    text-decoration: none;
    text-transform: uppercase;
-   color:rgb(44, 40, 44); 
+   color:whitesmoke; 
     }
     
 .navigation li a:hover {
@@ -42,77 +40,64 @@ nav {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase; 
-    padding: 10px 20px;
-    background-color: #837f80;
+    padding: 5px 10px;
+    background-color: #b34952;
+}
+header {
+    height: 40vh;
+    background-image:linear-gradient(
+    to right,
+    rgba(156, 87, 87, 0.246),
+     rgba(24, 21, 21, 0.246)),
+    url("../images/autocar.jpg");
+    background-size: cover;
+    background-position:top;
+    position: relative;
 }
 .about-section {
     width: 100%;
     padding:40px 0;
-    background: #b34952;
+    text-align: center;
+    display: inline-block;
 }
 .page-content {
    padding: 0 20px;
-   max-width: 1000px;
    overflow: hidden;
-}
-.page-content h1 {
-    border-bottom: 3px solid #2badc1;
-    color: #888;
-    font-family: open sans,sans-serif;
-    font-size: 40px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+   text-align: center;
+} 
+ h1 {
+    font-size: 50px;
+    font-family: monospace;
     text-transform: uppercase;
     text-align: center;
+    color:white;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 0 15px;
 }
  p {
-    color: #f1bebe;
+    color: #2f0909;
     font-family: Calibri;
     font-size: 30px;
-
-}
-.about {
-    padding-right:30px;
-}
-.about a {
-    display:inline-block;
-    color: #393939;
-    text-decoration: none;
-    border: 2px solid #393939;
-    border-radius: 24px;
-    padding: 8px 40px ;
-    transition: 0.4s linear;
-}
-.about a:hover{
-color: aqua;
-background: #393939;
-}
-.about p {
-    text-align: justify;
-    margin-bottom: 20px;
-}
+ }
 @media only screen and (max-width: 700px) {
 .about-section {
     flex: 100%;
     margin: 10px 0;
+    text-align: center;
 }
-.about {
+.page-content {
     padding: 0;
     text-align: center;
 }
 }
 
  h2 {
-    font-size: 30px;
-    border-bottom: 3px solid #9b836d09;
-    color: rgb(231, 182, 182);
-    font-family: open sans,sans-serif;
-    font-size: 40px;
-    font-weight: 300;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    font-size: 35px;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-weight: 500;
     text-transform: uppercase;
     text-align: center;
+    color: #2f0909;
+    padding: 0 15px;
 }
-

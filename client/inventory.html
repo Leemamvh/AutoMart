@@ -8,57 +8,92 @@
     <link rel="stylesheet" href="./css/inventory.css">
     </head>
     <body>
-        <nav>
-         <ul class="navigation">
-            <li><a href="./index.html">HOME</a><li>
-            <li><a href="./inventory.html">INVENTORY</a><li>
-            <li><a href="./about.html">ABOUT US</a>
-            <li><a href="./signup.html">REGISTER</a>
-            <li><a href="./signup.html">LOG IN</a>
-         </nav>
+        
+         <header class="product-filter">
+                  <h1>Cars</h1>
 
-          <section class="header-title">
-              <div class="container">
-                  <h1>All cars</h1>
+              <div class="sort">
+                  <div class="collection-sort">
+                      <label>Filter</label>
+                      <select>
+                          <option value="/">All Cars</option>
+                          <option value="/">Any Condition</option>
+                          <option value="/">Model</option>
+                          <option value="/">Color</option>
+                          <option value="/">Manufacture year</option>
+
+                      </select>
+                </div>
+                <div class="collection-sort">
+                    <label>Sort by</label>
+                    <select>
+                        <option value="/">Featured</option>
+                        <option value="/">Best Selling</option>
+                        <option value="/">Location</option>
+                        <option value="/">Brand</option>
+                        <option value="/">Min Price</option>
+                        <option value="/">Max Price</option>
+                    </select>
               </div>
-          </section>
+            </div>
+        </header>
 
-    <div class="row">
-              <div class="column">
-                    <img src="./images/BMW.jpg" width="100%">
-                    <h2>BMW</h2>
+    <section class="products">
+              <div class="product-card">
+                  <div class="product-image">
+                    <img src="./images/AUDI.jpeg">
+                  </div>
+                  <div class="product-info">
+                    <h2>AUDI</h2>
                     <p style=" color:#ef5c26;">#ID-011 <span style="color: #396339;">(Car)</span> </p>
                     <p><i class="fa fa-calendar" "=""></i> Published: 16 May 19</p>
-                    <p><i class="fa fa-bookmark-o" aria-hidden="true"></i> Brand: BMW</p>
+                    <p><i class="fa fa-bookmark-o" aria-hidden="true"></i> Brand: AUDI</p>
                     <p><i class="fa fa-cog" aria-hidden="true"></i>Condition: Foreign used</p>
+                    <h5>N1,200,000</h5>
                     </div>
+                </div>
                     
-                    <div class="column">
-                    <img src="./images/BENZ.jpg" width="100%">
-                    <h2>BENZ</h2>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./images/Benz.jpeg">
+                     </div>
+                    <div class="product-info">
+                        <h2>BENZ</h2>
                         <p style=" color:#ef5c26;">#ID-015 <span style="color: #1a0202;">(Car)</span> </p>
                         <p><i class="fa fa-calendar" "=""></i> Published: 16 May 19</p>
                         <p><i class="fa fa-bookmark-o" aria-hidden="true"></i> Brand: BENZ</p>
                         <p><i class="fa fa-cog" aria-hidden="true"></i>Condition: New</p>
+                        <h5>N16,200,000</h5>
                     </div>
+                </div>
 
-                    <div class="column">
-                     <img src="./images/toyota.jpg" width="100%">
-                        <h2>TOYOTA</h2>
+                    <div class="product-card">
+                            <div class="product-image">
+                                <img src="./images/BMW.jpeg">
+                            </div>
+                        <div class="product-info">
+                            <h2>BMW</h2>
                             <p style=" color:#ef5c26;">#ID-014 <span style="color: #1a0202;">(Car)</span> </p>
                             <p><i class="fa fa-calendar" "=""></i> Published: 16 May 19</p>
-                            <p><i class="fa fa-bookmark-o" aria-hidden="true"></i> Brand: TOYOTA</p>
+                            <p><i class="fa fa-bookmark-o" aria-hidden="true"></i> Brand: BMW</p>
                             <p><i class="fa fa-cog" aria-hidden="true"></i>Condition: New</p>
-                    </div>
+                            <h5>N29,800,000</h5>
+                        </div>
+                     </div>
 
-                        <div class="column">
-                         <img  src="./images/ferrari.jpg" width="100%">
-                            <h2>FERRARI</h2>
+                        <div class="product-card">
+                                <div class="product-image">
+                         <img  src="./images/range rover.jpeg">
+                            </div>
+                        <div class="product-info">
+                            <h2>RANGE ROVER</h2>
                                 <p style=" color:#ef5c26;">#ID-017 <span style="color: #1a0202;">(Car)</span> </p>
                                 <p><i class="fa fa-calendar" "=""></i> Published: 16 May 19</p>
-                                <p><i class="fa fa-bookmark-o" aria-hidden="true"></i> Brand: FERRARI</p>
+                                <p><i class="fa fa-bookmark-o" aria-hidden="true"></i> Brand: RANGE ROVER</p>
                                 <p><i class="fa fa-cog" aria-hidden="true"></i>Condition: New</p>
-                    </div>        
-    </div>  
+                                <h5>N35,200,000</h5>
+                    </div>   
+                </div>     
+        </section>
     </body>
     </html>
